@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Subject Count</title>
+    </head>
+    <body>
+        <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+                <div class="inner">
+                    <h1><span th:text="${count}">0</span></h1>
+                    <p>Subject</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-chart-pie fa-4x"></i>
+                </div>
+                <a th:href="@{/subject}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </body>
+</html>
